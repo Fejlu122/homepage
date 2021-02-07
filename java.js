@@ -1,2 +1,2 @@
-console.log('SIEMANKO');
-alert('SIEMANKO');
+
+const heading = document.querySelector('.main-heading--js');
