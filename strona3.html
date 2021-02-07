@@ -10,56 +10,63 @@
 
   <body>
     <header>
-      <nav>
-        <a href="index.html">index</a>
-        <a href="strona2.html">Strona 2</a>
-        <a href="strona4.html">Strona 4</a>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="strona2.html">Strona 2</a>
+        <a class="navigation__link" href="strona3.html">Strona 3</a>
+        <a class="navigation__link navigation_link--about" href="about.html">About</a>
       </nav>
     </header>
-    <main id="main">
+    <main>
       <section>
-        <h1>Maciek Korsan - strona 3</h1>
-        <img src="3.jpg" width="100" height="100" />
+        <h1 class="main-heading main-heading--js" >3</h1>
+        <img class="main-heading_img" src="3.jpg"/>
       </section>
       <section>
-        <a href="#notatki">Przejdź do notatki</a>
-        <h2>Kim jestem?</h2>
-        <p>
+        <a class="week-summary__note" href="#notatki">Przejdź do notatki</a>
+        <h2 class="week-summary__who">Kim jestem?</h2>
+        <p class="week-summary__who-description">
           Hej! Na co dzień uczę wspaniałych ludzi tajnej sztuki frontendu i
           pracuje w firmie o cieżko zapisywalnej nazwie: EYEDEA. Poza tym bardzo
-          lubie robić zdjęcia i latać dronem. Witam Cię na mojej stronie
+          lubie robić zdjęcia i latać dronem. <br />Witam Cię na mojej stronie
           domowej, mam nadzieję, że znajdziesz tu troche przydatnych rzeczy.
         </p>
       </section>
       <section id="notatki">
         <h2>Notatki z WTF:Co ten frontend</h2>
-        <article>
-          <h3>Jak stworzyć prawidłowego HTML-a?</h3>
+        <article class="week-summary">
+          <h3 class="week-summary__title">Jak stworzyć prawidłowego HTML-a?</h3>
 
-          <p>
+          <p class="week-summary_description">
             Tworzenie zgodnie ze standardami HTML-a to sztuka, ktróą do
-            perfekcji opanowało niewielu. Jeśli chcesz stać się częścią tej
-            grupy, musisz wykazać się otwrtą głową i dużą ilością wolnego
+            perfekcji opanowało niewielu. <br />Jeśli chcesz stać się częścią
+            tej grupy, musisz wykazać się otwrtą głową i dużą ilością wolnego
             czasu...
           </p>
         </article>
-        <article>
-          <h3>Czy nagrywanie szkolenia to prosta sprawa?</h3>
+        <article class="week-summary">
+          <h3 class="week-summary__title week-summary__title--special">
+            Czy nagrywanie szkolenia to prosta sprawa?
+          </h3>
 
-          <p>
+          <p class="week-summary_description">
             Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja
-            naiwny!). Samo planowanie rzeczy zajęło mi dużo więcej! Na szczęście
-            dzięki wsparciu bliskich i sporej motywacji udało mi się wytworzyć
-            schemat nagrywania, którą każdego dnia przbliża mnie do skończenia
-            pracy.
+            naiwny!). <br />Samo planowanie rzeczy zajęło mi dużo więcej!<br />
+            Na szczęście dzięki wsparciu bliskich i sporej motywacji udało mi
+            się wytworzyć schemat nagrywania, którą każdego dnia przbliża mnie
+            do skończenia pracy.
           </p>
         </article>
       </section>
-      <footer>
+      <footer class="week-summary__footer">
         Strona domowa Maćka Korsana, wszystkie treści są efektem tworzenia
         szkolenia WTF: co ten frontend.
-        <br /><a href="#main">Przejdź do góry.</a>
+        <br /><a class="week-summary__footer-back" href="#main"
+          >Przejdź do góry.</a
+        >
       </footer>
+
+      <script src="java.js"></script>
     </main>
   </body>
 </html>
